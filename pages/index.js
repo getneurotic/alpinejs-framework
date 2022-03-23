@@ -1,7 +1,7 @@
 import Layout from "../components/layout";
 import Alpine from "../lib/alpinejs";
 
-export default Alpine.createComponent('IndexPage', {
+export default Alpine.component('IndexPage', {
 	render() {
 		return (
 			<Layout>

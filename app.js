@@ -2,7 +2,7 @@ import Alpine from './lib/alpinejs'
 import IndexPage from './pages/index'
 import './app.css'
 
-Alpine.createComponent('App', {
+Alpine.component('App', {
 	loading: false,
 	route: null,
 
