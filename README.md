@@ -1,4 +1,4 @@
-# alpinejs-framework
+# AlpineJS Framework
 Framework build with AlpineJS.
 
 ## Start development server
