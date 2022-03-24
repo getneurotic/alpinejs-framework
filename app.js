@@ -9,10 +9,17 @@ Alpine.component('App', () => ({
 	route: null,
 
 	init() {
-		this.route = window.location.hash.replace('#', '')
+		this.updateRoute(window.location.hash)
+		window.addEventListener('hashchange', () => this.updateRoute(window.location.hash))
+	},
+
+	updateRoute(hash) {
+		const newRoute = hash.replace('#', '')
+		this.route = newRoute.length ? newRoute : '/'
 	},
 
 	template() {
+		console.log(this.route)
 		switch (this.route) {
 			case '/':
 				return (<IndexPage></IndexPage>)
