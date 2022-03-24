@@ -20,9 +20,9 @@ Alpine.component('App', () => ({
 
 	template() {
 		switch (this.route) {
-			case '/': 		return (<IndexPage></IndexPage>)
-			case '/about': 	return (<AboutPage></AboutPage>)
-			default: 		return (<ErrorPage status="404"></ErrorPage>)
+			case '/': return (<IndexPage></IndexPage>)
+			case '/about': return (<AboutPage></AboutPage>)
+			default: return (<ErrorPage status="404"></ErrorPage>)
 		}
 	}
 }))
