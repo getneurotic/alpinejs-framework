@@ -19,7 +19,6 @@ Alpine.component('App', () => ({
 	},
 
 	template() {
-		console.log(this.route)
 		switch (this.route) {
 			case '/':
 				return (<IndexPage></IndexPage>)
