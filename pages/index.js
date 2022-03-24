@@ -1,8 +1,8 @@
 import Layout from "../components/layout";
 import Alpine from "../lib/alpinejs";
 
-export default Alpine.component('IndexPage', {
-	render() {
+export default Alpine.component('IndexPage',  () => ({
+	template() {
 		return (
 			<Layout>
 				<div class="flex flex-col text-center">
@@ -13,9 +13,11 @@ export default Alpine.component('IndexPage', {
 							<path fill="currentColor" d="m49.8401255 22.3027772 82.6598485 82.297305H52.7557729L9.96802511 62z" />
 						</svg>
 					</a>
-					<slot></slot>
+					<p>
+						Welcome to your first AlpineJS app!
+					</p>
 				</div>
 			</Layout>
 		)
 	}
-})
+}))
