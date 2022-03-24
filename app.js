@@ -9,12 +9,12 @@ Alpine.component('App', () => ({
 	route: null,
 
 	init() {
-		this.updateRoute(window.location.hash)
-		window.addEventListener('hashchange', () => this.updateRoute(window.location.hash))
+		this.updateRoute()
+		window.addEventListener('hashchange', () => this.updateRoute())
 	},
 
-	updateRoute(hash) {
-		const newRoute = hash.replace('#', '')
+	updateRoute() {
+		const newRoute = window.location.hash.replace('#', '')
 		this.route = newRoute.length ? newRoute : '/'
 	},
 
